@@ -11,6 +11,8 @@ BachMotivNotes = [
 					[m21.note.Note("B4"), m21.note.Note("C5"), m21.note.Note("A4"), m21.note.Note("B-4")]		#Retrograde / Inversion (same intervals)
 				  ]
 
+BachMotivNotes = mF.generateMotiveIntervals(BachMotivNotes)
+
 Directory = "KdF/"
 MXLFiles = []
 for file in os.listdir(Directory):

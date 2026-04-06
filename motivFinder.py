@@ -5,8 +5,8 @@ def generateMotiveIntervals(motivNotes):
 	BachMotivIntervals = []
 	for i in range(len(motivNotes)):
 		BachMotivIntervals.append([])
+		firstMidiVal = motivNotes[i][0].pitch.midi
 		for note in motivNotes[i]:
-			firstMidiVal = motivNotes[i][0].pitch.midi
 			BachMotivIntervals[i].append(note.pitch.midi - firstMidiVal)
 	return BachMotivIntervals
 
@@ -54,12 +54,8 @@ def findMotiv(flatScore, motiv):
 
 
 def findMotivFromMXL(fileName, motiv):
-	motiv = generateMotiveIntervals(motiv)
 	fullScore = m21.converter.parse(fileName)
 	flatScore = generateFlatScore(fullScore)
 	listFoundMotives = findMotiv(flatScore, motiv)
 
 	return listFoundMotives
-
-
-
