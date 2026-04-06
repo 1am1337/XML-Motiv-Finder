@@ -1,7 +1,0 @@
-\begin{MintedVerbatim}[commandchars=\\\{\}]
-  \PYG{n}{Directory} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}KdF/\PYGZsq{}}
-  \PYG{n}{MXLFiles} \PYG{o}{=} \PYG{p}{[]}
-  \PYG{k}{for} \PYG{n}{file} \PYG{o+ow}{in} \PYG{n}{os}\PYG{o}{.}\PYG{n}{listdir}\PYG{p}{(}\PYG{n}{Directory}\PYG{p}{):}
-    \PYG{k}{if} \PYG{n}{file}\PYG{o}{.}\PYG{n}{endswith}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}.mxl\PYGZsq{}}\PYG{p}{):}
-      \PYG{n}{MXLFiles}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{file}\PYG{p}{)}
-\end{MintedVerbatim}
